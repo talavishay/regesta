@@ -1,0 +1,21 @@
+.region-top-menu-box h2{
+	margin-top: unset;
+}
+#branding{
+	display : inline-block;
+	width:100%;
+	position: relative;
+}
+ #banner{
+	height: 200px;
+}
+#banner{
+	width: 100%;
+	height: 250px;
+	margin-bottom: 20px;
+}
+.region-search-keyword {
+    position: absolute;
+    top: 180px;
+    padding-left: 2%;
+}

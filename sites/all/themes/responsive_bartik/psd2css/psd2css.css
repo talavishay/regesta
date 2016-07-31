@@ -1,0 +1,53 @@
+/*
+ *  psd2css.css
+ *
+ *  This is your external CSS style sheet. It defines all of the CSS styles that you
+ *  are using in your page.  If you are going to create multiple pages from the same
+ *  PSD file (like a template), you will share this CSS style sheet between the various
+ *  pages.
+ *
+ *  This file was originally generated at http://psd2cssonline.com
+ *  July 17, 2016, 12:58 pm with psd2css Online version 1.95
+ *
+ */
+
+body {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: small;
+}
+
+/* You named this layer Revised Regesta Regni Hierosolymitani Database */
+#Layer-1 {
+  position: absolute;
+  left: +114px;
+  top: +55px;
+  width: 548px;
+  height: 30px;
+  z-index: 1;
+}
+
+/* You named this layer logo */
+#Layer-2 {
+  position: absolute;
+left: 0px;
+top: 33px;
+width: 1000px;
+height: 57px;
+z-index: 2;
+}
+
+/* Here are some examples of how you might want to change the
+ * look and behavior of the links on your page.  Some examples for
+ * further customization are included in comments.  */
+a {
+  cursor: pointer;
+  outline: none;
+}
+a:link { color: #F88; }
+a:visited { color: #F88; }
+a:hover {
+  color: #F00;
+  /* text-decoration: underline; */
+  /* font-weight: bold; */
+}

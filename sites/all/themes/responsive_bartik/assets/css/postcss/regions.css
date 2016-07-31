@@ -1,0 +1,35 @@
+.region-content,
+.region-top-menu-box,
+.region-sponsorship ,
+.region-main-menu,
+.region-footermenu,
+.region-copyright {
+    padding: 0 2%;
+}
+.region-copyright {
+	padding-bottom : 5px;
+}
+.region-footermenu,
+.region-copyright {
+  background-color: black;
+}
+.region-footermenu a,
+.region-copyright a{
+ 
+  color : white;
+
+}
+
+
+.region-main-menu{
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	background-color: rgba(255, 255, 255, 0.32);
+	position: absolute;
+	z-index: 1;
+	width: 96%;
+	top: 40px;
+}
+.region-search-keyword {
+	top: 180px;
+}

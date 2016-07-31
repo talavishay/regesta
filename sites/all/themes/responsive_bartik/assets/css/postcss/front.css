@@ -1,0 +1,55 @@
+.front .region-search{
+  position: relative;
+  top: -30px;
+}
+.front .region-search-keyword {
+    position: absolute;
+    top: 250px;
+}
+
+#front2col{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+#front2col .region{
+  /*background-color: #f00;*/
+	background-color: #edefed;
+	padding: 2%;
+	padding-top: 1em;
+}
+.region-frontcontentright {
+    width: 26%;
+    margin-right: 2%;
+}
+.region-frontcontentleft {
+    width: 59.5%;
+    margin-left: 2%;
+}
+.front #banner{
+	width: 100%;
+	height: 360px;
+	margin-bottom: 30px;
+}
+.front #page {
+	background-position: bottom right;
+}
+
+.front .region-top-menu-box {
+	direction: rtl;
+}
+#block-system-main-menu .content li {
+  line-height: 2.3em;
+}
+
+
+.front .region-main-menu{
+	top: 95px;
+}
+
+.front #stamp{
+	position : absolute;
+	bottom: 100px;
+	right: 40px;
+	transform: scale(1);
+}

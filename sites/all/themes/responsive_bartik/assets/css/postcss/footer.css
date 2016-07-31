@@ -1,0 +1,12 @@
+#main-menu-links_footer{
+  display: flex;
+  justify-content: space-between;
+}
+.navigation.bottom a{
+  color: white;
+}
+.navigation.bottom,
+.region-footermenu{
+  background-color: black;
+}
+

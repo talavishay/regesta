@@ -1,0 +1,40 @@
+@import "regions.css";
+@import "datauri.css";
+@import "header.css";
+@import "searchBox.css";
+@import "facet.css";
+@import "branding.css";
+@import "colors.css";
+@import "footer.css";
+@import "copyright.css";
+@import "menuTop.css";
+@import "front.css";
+@import "mainMenu.css";
+@import "footerMenu.css"; 	
+@import "search.css";
+@import "dialog.css";
+@import "overlay.css";
+*{
+	font-family : arial, Arial;
+}
+#page-wrapper{
+  margin: 0 auto;
+  width : 1000px;
+}
+input {
+  line-height: 1.6em;
+}
+#first-time{
+  display:none;
+}
+
+#stamp{
+	position: absolute;
+	bottom: 60px;
+	right: -50px;
+	transform: scale(0.7);
+}
+#page-title{
+	color: #AA1A02;
+	font-size : 1.1em;
+}

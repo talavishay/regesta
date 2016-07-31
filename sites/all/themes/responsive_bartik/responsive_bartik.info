@@ -1,0 +1,31 @@
+name = Responsive regestra
+description = A flexible, recolorable theme with many regions and a responsive, mobile-first layout.
+core = 7.x
+
+stylesheets[all][]  = assets/css/layout.css
+stylesheets[all][]  = assets/css/style.css
+stylesheets[all][]  = assets/css/regstra_index.css
+;stylesheets[print][]= assets/css/print.css
+
+
+;scripts[] = assets/js/collapsible-menu.js
+scripts[] = assets/js/overlay_site.js
+scripts[] = assets/js/customFacet.js
+
+regions[top_menu_box]     = top menu box
+regions[branding]         = Branding
+regions[main_menu]        = Main menu
+regions[banner]           = banner
+regions[search]           = Search
+regions[search_keyword]  = Search keyword
+;regions[search_params]   = Search params
+regions[content]          = content
+regions[frontContentLeft] = front content left
+regions[frontContentRight]= front content right
+
+regions[sponsorship]  = sponsorship
+regions[footermenu]   = footermenu
+regions[Copyright]    = Copyright
+
+
+settings[foo_example] = blue bikeshed

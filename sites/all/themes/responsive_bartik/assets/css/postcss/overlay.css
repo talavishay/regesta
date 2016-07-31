@@ -1,0 +1,35 @@
+#overlay_site{
+      background: url("/sites/all/themes/responsive_bartik/screenshot.png") no-repeat scroll 0 0 / contain transparent;
+    display: none;
+    height: 1680px;
+    opacity: 0.765;
+    pointer-events: none;
+    position: absolute;
+    width: 1000px;
+    border:1px solid red;
+    border-top:none;
+    border-bottom:none;
+    background-size:contain;
+    background-repeat: no-repeat !important;
+    right: 0px;
+    top: 0;
+    z-index: 10;
+}
+.overflow{
+    overflow: hidden;
+}
+#overlay_controls_wrap{
+  position:fixed;top:5%;left:0px;z-index:99999;}
+.overlay_controls_box {
+    display: block;
+    font-size: 2em;
+    height: 30px;
+    line-height: 1.2em;
+    text-align: center;
+    width: 30px;
+    cursor:pointer ;
+    margin-bottom: .5em;
+}
+#overlay_control{background:none repeat scroll 0 0 red;}
+#overlay_control_light{background:none repeat scroll 0 0 green;}
+#overlay_control_dark{background:none repeat scroll 0 0 black;color:#fff}

@@ -1,0 +1,9 @@
+<?php
+function regesta_init() {
+  drupal_add_js(drupal_get_path('module', 'regesta') . '/assets/js/dist/index.js');
+   drupal_add_library('system', 'ui.dialog');
+  
+};
+
+
+?>
