@@ -1,5 +1,3 @@
-var backbone = require('backbone');
-
 jQuery(document).ready(_init);	
 
 function _init(){
@@ -9,7 +7,7 @@ function _init(){
 	
 	jQuery("#edit-search-api-views-fulltext-wrapper .form-item input").first()
 		.after(jQuery(".views-submit-button").clone());
-	if(jQuery("body").hasClass("page-db")){
+	if(jQuery("body").hasClass("page-database")){
 		initSearch();
 	};
 };
@@ -34,7 +32,6 @@ function initSearch(i, val){
 						jQuery('.ui-dialog')
 							.prepend(jQuery(".ui-dialog .ui-button"))
 							.find(".ui-dialog-titlebar").remove();
-						jQuery(".views-field-field-text", this).remove();
 						
 						var dialog = this;
 						jQuery(".ui-button", this).on("click", function(){
