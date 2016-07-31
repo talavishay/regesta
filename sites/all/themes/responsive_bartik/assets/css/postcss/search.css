@@ -40,15 +40,14 @@ vertical-align: top;
 	word-wrap: break-word;
 	width: 141px;
 }
-.pop{
+.full-text{
 	display : none;
 }
-.popup .pop {
+.popup .full-text{
 	display : block;
 }
-.popup .views-field-field-text {
+.popup .teaser-text {
 	display : none;
-	
 }
 .views-more-link{
 	padding-right: 30px;
