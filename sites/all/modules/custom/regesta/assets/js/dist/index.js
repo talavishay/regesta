@@ -58,7 +58,7 @@
 		
 		jQuery("#edit-search-api-views-fulltext-wrapper .form-item input").first()
 			.after(jQuery(".views-submit-button").clone());
-		if(jQuery("body").hasClass("page-db")){
+		if(jQuery("body").hasClass("page-database")){
 			initSearch();
 		};
 	};
