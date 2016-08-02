@@ -52,6 +52,10 @@
     position: relative;
     top: -33px;
 }
+#block-views-4d96955e155a195b9cd50546209f5f3d .content ,
+#block-facetapi-9d9lyrqsbwobfiwpzezmjqvuvhiadiza .content {
+	left: -177px;
+}
 .region-search-keyword .block:not(#block-views-exp-main-page):hover .content,
 .region-search .block:not(#block-views-exp-main-page):hover  .content,
 .region-search-keyword .block:not(#block-views-exp-main-page):hover  .content,

@@ -45,3 +45,8 @@
   padding: 0px;
   line-height: 30px;
 }
+.menu-mlid-405 a,
+.menu-mlid-405 {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}

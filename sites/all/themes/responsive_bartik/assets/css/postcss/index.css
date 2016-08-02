@@ -30,7 +30,7 @@ input {
 
 #stamp{
 	position: absolute;
-	bottom: 60px;
+	bottom: 16px;
 	right: -50px;
 	transform: scale(0.7);
 }

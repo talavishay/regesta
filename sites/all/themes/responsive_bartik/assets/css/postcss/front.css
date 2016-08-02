@@ -6,7 +6,6 @@
     position: absolute;
     top: 250px;
 }
-
 #front2col{
 	display: flex;
 	justify-content: space-between;
@@ -34,22 +33,15 @@
 .front #page {
 	background-position: bottom right;
 }
-
 .front .region-top-menu-box {
 	direction: rtl;
 }
-#block-system-main-menu .content li {
-  line-height: 2.3em;
-}
-
-
 .front .region-main-menu{
-	top: 95px;
+	top: 97px;
 }
-
 .front #stamp{
 	position : absolute;
-	bottom: 100px;
+	bottom: 56px;
 	right: 40px;
 	transform: scale(1);
 }
