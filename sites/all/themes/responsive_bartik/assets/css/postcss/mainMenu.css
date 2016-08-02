@@ -14,7 +14,7 @@
 	font-size:  .95em;
 	margin-right: 0px;
 	margin-left: 30px;
-	line-height: 3em;
+	line-height: 30px;
 	
 }
 #block-system-main-menu {
@@ -28,7 +28,7 @@
 	margin-bottom: unset;
 	font-weight: bold;
 	font-size:  1em;
-	line-height: 3em;
+	line-height: 30px;
 }
 #block-system-main-menu a{
 	color : black;
