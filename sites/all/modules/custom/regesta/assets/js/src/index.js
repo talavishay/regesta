@@ -1,4 +1,5 @@
-jQuery(document).ready(_init);	
+window.Mark = require('./jquery.mark.min.js');
+jQuery(document).ready(_init);
 
 function _init(){
 	jQuery(".views-exposed-widgets label").each(_doit);
@@ -8,6 +9,7 @@ function _init(){
 	jQuery("#edit-search-api-views-fulltext-wrapper .form-item input").first()
 		.after(jQuery(".views-submit-button").clone());
 	if(jQuery("body").hasClass("page-database")){
+		Mark('.full-text, .teaser-text').mark(getQueryString('search_api_views_fulltext'));
 		initSearch();
 	};
 };
@@ -118,3 +120,15 @@ function open_dialog(nid) {
 	});
 }
 		
+/**
+ * Get the value of a querystring
+ * @param  {String} field The field to get the value of
+ * @param  {String} url   The URL to get the value from (optional)
+ * @return {String}       The field value
+ */
+var getQueryString = function ( field, url ) {
+    var href = url ? url : window.location.href;
+    var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+    var string = reg.exec(href);
+    return string ? string[1] : null;
+};
