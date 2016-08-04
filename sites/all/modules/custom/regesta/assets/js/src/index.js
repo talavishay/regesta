@@ -13,7 +13,10 @@ function _init(){
 	jQuery("#edit-search-api-views-fulltext-wrapper .form-item input").first()
 		.after(jQuery(".views-submit-button").clone());
 	if(jQuery("body").hasClass("page-database")){
-		Mark('.full-text, .teaser-text').mark(getQueryString('search_api_views_fulltext'));
+		var query = getQueryString('search_api_views_fulltext');
+		if(query){
+			Mark('.full-text, .teaser-text').mark(query);
+		};
 		initSearch();
 	};
 };
