@@ -2,6 +2,7 @@ window.Mark = require('./jquery.mark.min.js');
 jQuery(document).ready(_init);
 
 function _init(){
+	Mark('.full-text, .teaser-text').mark(getQueryString('search_api_views_fulltext'));
 	jQuery(".views-exposed-widgets label").each(_doit);
 	jQuery('.region-search').hide();
 	jQuery("#edit-field-institution-recipient-wrapper label").text("Search by parameters");
