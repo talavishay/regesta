@@ -44,11 +44,14 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	window.Mark = __webpack_require__(1);
+	try {
+		var Mark = __webpack_require__(1);
+	} catch(e) {
+		console.log(e);
+	};
 	jQuery(document).ready(_init);
-
 	function _init(){
-		Mark('.full-text, .teaser-text').mark(getQueryString('search_api_views_fulltext'));
+		
 		jQuery(".views-exposed-widgets label").each(_doit);
 		jQuery('.region-search').hide();
 		jQuery("#edit-field-institution-recipient-wrapper label").text("Search by parameters");
