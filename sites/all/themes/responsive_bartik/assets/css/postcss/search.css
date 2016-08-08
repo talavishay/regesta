@@ -1,23 +1,34 @@
-.searchdb  .views-label {
+.searchdb .views-label {
     width: 20%;
-display: inline-block;
-text-align: right;
-margin-right: 10px;
-color : #C53413;
-vertical-align: top;
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+	color : #C53413;
+	vertical-align: top;
+}
+.searchdb .views-field:not(.views-field-title-1) .views-label {
+	text-transform: capitalize;
+}
+.searchdb .views-field-title-1 .views-label {
+	text-transform: uppercase;
 }
 .searchdb  .field-content {
     display: inline-block;
     width: 72%;
     padding : 5px 2%;
 }
+/*
 .searchdb .views-field:nth-child(even) .field-content{
 	background-color: #F3DBD7;
 }
+*/
 .searchdb  .views-field:nth-child(odd) .field-content {
-	background-color: #EAE7E7;
+	background-color: #CDCBCC;
+	border-top : 1px solid #7B7B7B;
+	border-bottom : 1px solid #7B7B7B;
 	
 }
+/*
 .views-field:first-child .field-content {
 	border-radius: 10px 10px 0px 5px;
 }
@@ -25,6 +36,7 @@ vertical-align: top;
  .views-field:last-child .field-content {
 	border-radius: 0px 0px 5px 5px;
 }
+*/
 .views-row-last .field-content {
 	background-color: #EAE7E7;
 	
@@ -60,4 +72,10 @@ vertical-align: top;
 .view-header{
 	text-align : center;
 	margin-bottom : 20px;
+}
+.view-header .query {
+    margin-right: 20px;
+}
+.pager a{
+	color : #C53413;
 }

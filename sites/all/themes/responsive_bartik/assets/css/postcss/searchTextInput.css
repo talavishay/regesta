@@ -1,0 +1,8 @@
+#edit-search-api-views-fulltext-wrapper input:focus {
+	color: white;
+	background-color: #791c0c;
+}
+#edit-search-api-views-fulltext-wrapper input:hover:not(:focus) {
+	background-color: #d1cfcf;
+	color : #1b1b1b;
+}

@@ -41,7 +41,7 @@
 }
 .front #stamp{
 	position : absolute;
-	bottom: 56px;
+	bottom: 16px;
 	right: 40px;
 	transform: scale(1);
 }

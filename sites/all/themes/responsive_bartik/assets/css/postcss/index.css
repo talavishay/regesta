@@ -2,6 +2,8 @@
 @import "datauri.css";
 @import "header.css";
 @import "searchBox.css";
+@import "searchTextInput.css";
+@import "searchAutoComplete.css";
 @import "facet.css";
 @import "branding.css";
 @import "colors.css";
@@ -30,11 +32,12 @@ input {
 
 #stamp{
 	position: absolute;
-	bottom: 16px;
+	bottom: -24px;
 	right: -50px;
 	transform: scale(0.7);
 }
-#page-title{
+#page-title {
 	color: #AA1A02;
-	font-size : 1.1em;
+	font-size: 1.2em;
+	font-weight: bold;
 }
