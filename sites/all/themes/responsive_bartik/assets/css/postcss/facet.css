@@ -21,10 +21,14 @@
   max-height: 150px;
   overflow-y: scroll;
   padding-left: 0px;
-  width : 400px;
   margin : 0px;
 	padding : 0px;
 }
+.views-widget + .block-views ul,
+.block-facetapi ul {
+	min-width : 400px;
+}
+
 .region-search-keyword .block li a,
 .region-search .block li a{
 	color : #605E61;
@@ -86,8 +90,9 @@ input.facetapi-checkbox{
 .region-search-keyword .block:not(#block-views-exp-main-page) li {
 	background-color : #fff ;
 }
-.region-search-keyword .block:not(#block-views-exp-main-page) li:hover {
-	background-color : #F3DBD7 ;
+.region-search-keyword .block:not(#block-views-exp-main-page) li:hover:not(.facetapi-active) {
+	background-color: #d1cfcf;
+	color : #1b1b1b;
 }
 /*
 .region-search-keyword .block:not(#block-views-exp-main-page) li:hover a,
@@ -110,14 +115,11 @@ input.facetapi-checkbox{
 .region-search .block:not(#block-views-exp-main-page) li a.facetapi-active,
 */
 li.facetapi-active {
-	background-color: #b11515 !important;
+	background-color: #791c0c !important; 
 }
 a.facetapi-active{
 	color : #fff !important; 
 }
 .facetapi-checkbox {
     margin-right: 10px !important;
-}
-#edit-field-term-type-field-term-title-wrapper + .views-submit-button{
-	display : none;
 }

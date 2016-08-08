@@ -29,6 +29,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
             //~ 
             
             { name : 'Capitalized para'		, element : 'span',attributes : {class : "crusaderCap"}},
+            { name : 'crusader'		, element : 'span',attributes : {class : "crusader"}},
             { name : 'pinkBox'		, element : 'div' ,attributes : {class : "pinkBox"}},
             { name : 'red Tilte'		, element : 'p' ,attributes : {class : "redTilte"}},
             { name : 'manager'		, element : 'span' ,attributes : {class : "manager"}},

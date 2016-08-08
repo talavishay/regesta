@@ -15,10 +15,19 @@ function _init(){
 	if(jQuery("body").hasClass("page-database")){
 		var query = getQueryString('search_api_views_fulltext');
 		if(query){
-			Mark('.full-text, .teaser-text').mark(query);
+			jQuery(".view-header").prepend(jQuery('<span class="query">' + query + '</span>'));
+			Mark('.view-header, .full-text, .teaser-text').mark(query);
 		};
 		initSearch();
 	};
+	
+	//BUGFIX : facet-api duplicates
+	jQuery("li.facetapi-active").each(function(i ,val){
+		if(jQuery("a", val).hasClass("facetapi-active")){
+			return ;
+		}
+		jQuery(val).removeClass("facetapi-active");
+	});
 };
 
 function initSearch(i, val){
