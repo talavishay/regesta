@@ -1,8 +1,60 @@
-#edit-search-api-views-fulltext-wrapper input:focus {
+#edit-search-api-views-fulltext-wrapper input.focus,
+#edit-field-institution-recipient-wrapper input.focus, 
+#edit-field-grantor-wrapper input.focus,
+#edit-field-recepient-wrapper input.focus, 
+#edit-field-year-1-wrapper input.focus,
+#edit-field-year-wrapper input.focus, 
+#edit-field-term-type-field-term-title-wrapper input.focus,
+#edit-search-api-views-fulltext-wrapper input:focus,
+#edit-field-institution-recipient-wrapper input:focus, 
+#edit-field-grantor-wrapper input:focus,
+#edit-field-recepient-wrapper input:focus, 
+#edit-field-year-1-wrapper input:focus,
+#edit-field-year-wrapper input:focus, 
+#edit-field-term-type-field-term-title-wrapper input:focus{
 	color: white;
 	background-color: #791c0c;
 }
-#edit-search-api-views-fulltext-wrapper input:hover:not(:focus) {
+
+
+#edit-search-api-views-fulltext-wrapper input.hovernotfocus,
+#edit-field-institution-recipient-wrapper input.hovernotfocus, 
+#edit-field-grantor-wrapper input.hovernotfocus,
+#edit-field-recepient-wrapper input.hovernotfocus, 
+#edit-field-year-1-wrapper input.hovernotfocus,
+#edit-field-year-wrapper input.hovernotfocus, 
+#edit-field-term-type-field-term-title-wrapper input.hovernotfocus,
+#edit-search-api-views-fulltext-wrapper input:hover:not(:focus),
+#edit-field-institution-recipient-wrapper input:hover:not(:focus), 
+#edit-field-grantor-wrapper input:hover:not(:focus),
+#edit-field-recepient-wrapper input:hover:not(:focus), 
+#edit-field-year-1-wrapper input:hover:not(:focus),
+#edit-field-year-wrapper input:hover:not(:focus), 
+#edit-field-term-type-field-term-title-wrapper input:hover:not(:focus){
+	color: #1b1b1b;
 	background-color: #d1cfcf;
-	color : #1b1b1b;
+}
+
+/*
+input:focus,
+*/
+input:focus::-webkit-input-placeholder,
+.focus::-webkit-input-placeholder,
+.hovernotfocus::-webkit-input-placeholder{
+    color: white !important;
+}
+input:focus:-ms-input-placeholder,
+.focus:-ms-input-placeholder,
+.hovernotfocus:-ms-input-placeholder{
+    color: white !important;
+}
+input:focus:-moz-placeholder,
+.focus:-moz-placeholder,
+.hovernotfocus:-moz-placeholder{
+    color: white !important;
+}
+input:focus::-moz-placeholder ,
+.focus::-moz-placeholder ,
+.hovernotfocus::-moz-placeholder {
+    color: white !important;
 }

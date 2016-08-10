@@ -5,18 +5,25 @@ try {
 };
 jQuery(document).ready(_init);
 function _init(){
+	// search inpus placeholders
+	jQuery(".views-exposed-widgets label").each(_labelToPlaceHolder);
 	
-	jQuery(".views-exposed-widgets label").each(_doit);
+	// facet behaviours
+	facethoverIntent();
 	jQuery('.region-search').hide();
 	jQuery("#edit-field-institution-recipient-wrapper label").text("Search by parameters");
 	
 	jQuery("#edit-search-api-views-fulltext-wrapper .form-item input").first()
 		.after(jQuery(".views-submit-button").clone());
+	
+	// query word highlight
 	if(jQuery("body").hasClass("page-database")){
 		var query = getQueryString('search_api_views_fulltext');
 		if(query){
-			jQuery(".view-header").prepend(jQuery('<span class="query">' + query + '</span>'));
-			Mark('.view-header, .full-text, .teaser-text').mark(query);
+			var queryWrap = jQuery('<span class="query">' + query + '</span>');
+			Mark(queryWrap).mark(query);
+			Mark('.full-text, .teaser-text').mark(query);
+			jQuery(".view-header").before(queryWrap);
 		};
 		initSearch();
 	};
@@ -31,46 +38,47 @@ function _init(){
 };
 
 function initSearch(i, val){
+	// popup behaviour
 	jQuery(".views-more-link")
-		.on("click",function(e){
-			e.preventDefault();
-			
-			var row = jQuery(e.currentTarget).parents('.views-row'),
-				html = row.clone().html();
+	.on("click",function(e){
+		e.preventDefault();
 		
-			var wrap = jQuery(html).wrap('<div class="views-row"></div>');
+		var row = jQuery(e.currentTarget).parents('.views-row'),
+			html = row.clone().html();
+	
+		var wrap = jQuery(html).wrap('<div class="views-row"></div>');
+		
+		jQuery('<div class="searchdb popup"></div>')
+			.html(wrap)
+			.dialog({	
+				modal : true,		
+				title: "",	
+				width: '800px',
+				open : function(d) {
+					jQuery('.ui-dialog')
+						.prepend(jQuery(".ui-dialog .ui-button"))
+						.find(".ui-dialog-titlebar").remove();
+					
+					var dialog = this;
+					jQuery(".ui-button", this).on("click", function(){
+									jQuery(dialog).dialog('destroy').remove();
+					});
+				},
+				close : function() {
+					jQuery(this).dialog('destroy').remove();
+				}
+			}).dialog('open');
 			
-			jQuery('<div class="searchdb popup"></div>')
-				.html(wrap)
-				.dialog({	
-					modal : true,		
-					title: "",	
-					width: '80%',
-					open : function(d) {
-						jQuery('.ui-dialog')
-							.prepend(jQuery(".ui-dialog .ui-button"))
-							.find(".ui-dialog-titlebar").remove();
-						
-						var dialog = this;
-						jQuery(".ui-button", this).on("click", function(){
-										jQuery(dialog).dialog('destroy').remove();
-						});
-
-					},
-					close : function() {
-						jQuery(this).dialog('destroy').remove();
-					}
-				}).dialog('open');
-			
-				
-			return false;
+		return false;
 	});
+	
 };
-function _doit(i, val){
+function _labelToPlaceHolder(i, val){
 	var parent = jQuery(val).parent(),
 		label = parent.find("label").text().trim();
 	
 	parent.find("input").attr("placeholder", label);
+	
 	setFacets(parent, val, label);
 	
 	if(parent.find("a").hasClass("facetapi-active")){
@@ -92,7 +100,7 @@ function setFacets(parent, val, label){
 				facetBlock2 = jQuery('#block-views-1fc7af91c1ec7d75ac090782522c4619');
 			parent.append( facetBlock1.length ? facetBlock1 : facetBlock2 );
 		break; 
-		case 'Transaction Type':
+		case 'Document type':
 			var facetBlock1 = jQuery('#block-facetapi-9d9lyrqsbwobfiwpzezmjqvuvhiadiza'),
 			
 				facetBlock2 = jQuery('#block-views-4d96955e155a195b9cd50546209f5f3d');
@@ -108,34 +116,44 @@ function setFacets(parent, val, label){
 	
 };
 
-function open_dialog(nid) {
-		jQuery(".ui-dialog-content").dialog("close").remove();
-		
-	jQuery('<div></div>').dialog({
-		width : width,
-		// height: 4	00,
-		//~ position : {
-			//~ my : "center",
-			//~ at : "top",
-			//~ within : within
-		//~ },
-		resizable : false,
-		modal : true,
-		draggable : false,
-		show : "explode",
-		open : function() {
-			jQuery(this).append('<img style="margin: 20px auto;display: block;" id="wait" src="/sites/all/themes/omega3sub/images/busy.gif" />');
-			jQuery(".ui-dialog-titlebar", this).remove();
-			open_popup_node(this, nid);
-			jQuery('.ui-dialog').prepend(jQuery(".ui-dialog .ui-button"));
-
-		},
-		close : function() {
-			jQuery(this).dialog('destroy').remove();
-		}
+function facethoverIntent() {
+	var facetTitle = jQuery('.views-exposed-widget h2');
+	facetTitle.each(function(i, val){
+		jQuery(val)
+			.on("mouseenter", function(e){
+				var widget = jQuery(e.currentTarget)
+						.parents(".views-exposed-widget"); 
+				jQuery("input", widget)
+					.addClass("focus");
+			}).on("mouseout", function(e){
+				var widget = jQuery(e.currentTarget)
+						.parents(".views-exposed-widget"); 
+				jQuery("input", widget)
+					.removeClass("focus");
+			});
 	});
-}
+	
+	jQuery('.views-exposed-widget .content, .views-exposed-widget .content *').on("mouseenter", function(e){
+		var widget = jQuery(e.currentTarget).parents(".views-exposed-widget"); 
+		jQuery("input", widget).addClass("focus");
+	}).on("mouseout", function(e){
+		var widget = jQuery(e.currentTarget).parents(".views-exposed-widget"); 
+		jQuery("input", widget).removeClass("focus");
+	});
+	
+	//~ facetTitleFixDimensions(facetTitle);
+};
+function facetTitleFixDimensions(facetTitle){
+	jQuery(facetTitle).each(function(i, val){
+		var	widget 		= jQuery( val ).parents(".views-exposed-widget"),
+			input		= jQuery( "input", widget),
+			inputWidth	= jQuery( input ).width(),
+			inputHeight	= jQuery( input ).height();
 		
+		jQuery( val ).width( inputWidth );
+		jQuery( val ).height( inputHeight );
+	});
+};
 /**
  * Get the value of a querystring
  * @param  {String} field The field to get the value of

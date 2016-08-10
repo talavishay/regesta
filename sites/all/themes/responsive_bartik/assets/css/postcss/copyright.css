@@ -1,4 +1,8 @@
 #block-block-2 p{
 	color: white;
-	margin : 0px;
+	margin: 0px;
+	font-size: 14px;
+}
+#block-block-2 p:last-child{
+	font-size: 12px;
 }

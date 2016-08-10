@@ -23,10 +23,12 @@
   padding-left: 0px;
   margin : 0px;
 	padding : 0px;
+	overflow-x: hidden;
 }
 .views-widget + .block-views ul,
 .block-facetapi ul {
 	min-width : 400px;
+	box-shadow: 0px 1px 10px -3px black;
 }
 
 .region-search-keyword .block li a,
@@ -40,8 +42,14 @@
 .region-search .block li {
 
     margin: 0px;
-    padding: 0.2em 0.5em ;
+    padding: 0em  ;
     list-style: none;
+}
+
+.region-search-keyword .block li a,
+.region-search .block li a{
+    padding: 0.2em 0.5em ;
+    display : inline-block;
 }
 .region-search-keyword .block:not(#block-views-exp-main-page)  .content,
 .region-search .block:not(#block-views-exp-main-page)  .content{
@@ -50,6 +58,7 @@
 .region-search-keyword .block:not(#block-views-exp-main-page) h2, 
 .region-search .block:not(#block-views-exp-main-page) h2{
 	opacity: 0;
+	line-height: 33px;
 }
 .region-search-keyword .block:not(#block-views-exp-main-page), 
 .region-search .block:not(#block-views-exp-main-page) {
@@ -58,7 +67,7 @@
 }
 #block-views-4d96955e155a195b9cd50546209f5f3d .content ,
 #block-facetapi-9d9lyrqsbwobfiwpzezmjqvuvhiadiza .content {
-	left: -177px;
+	left: -205px;
 }
 .region-search-keyword .block:not(#block-views-exp-main-page):hover .content,
 .region-search .block:not(#block-views-exp-main-page):hover  .content,
@@ -94,32 +103,17 @@ input.facetapi-checkbox{
 	background-color: #d1cfcf;
 	color : #1b1b1b;
 }
-/*
-.region-search-keyword .block:not(#block-views-exp-main-page) li:hover a,
-.region-search .block:not(#block-views-exp-main-page) li:hover a{
-	color : #fff;
-}
-*/
-/*
-.region-search-keyword .block:not(#block-views-exp-main-page) li:hover ,
-*/
-/*
-.region-search .block:not(#block-views-exp-main-page) li:hover a,
-.region-search-keyword .block:not(#block-views-exp-main-page) li:hover ,
-.region-search .block:not(#block-views-exp-main-page) li:hover ,
-*/
-/*
-.region-search-keyword .block:not(#block-views-exp-main-page) li.facetapi-active  ,
-.region-search .block:not(#block-views-exp-main-page) a.facetapi-active ,
-.region-search-keyword .block:not(#block-views-exp-main-page) a.facetapi-active,
-.region-search .block:not(#block-views-exp-main-page) li a.facetapi-active,
-*/
+
 li.facetapi-active {
 	background-color: #791c0c !important; 
 }
-a.facetapi-active{
+.facetapi-active{
 	color : #fff !important; 
 }
 .facetapi-checkbox {
-    margin-right: 10px !important;
+	margin-left: 10px !important;
+}
+.facetapi-facetapi-checkbox-links .leaf {
+	display: flex;
+	align-items: center;
 }

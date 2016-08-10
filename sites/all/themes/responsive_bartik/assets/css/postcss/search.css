@@ -1,10 +1,10 @@
 .searchdb .views-label {
-    width: 20%;
+    width: 7%;
 	display: inline-block;
 	text-align: right;
 	margin-right: 10px;
 	color : #C53413;
-	vertical-align: top;
+	vertical-align: middle;
 }
 .searchdb .views-field:not(.views-field-title-1) .views-label {
 	text-transform: capitalize;
@@ -12,18 +12,23 @@
 .searchdb .views-field-title-1 .views-label {
 	text-transform: uppercase;
 }
+
+#block-views-exp-main-page label,
+.region-top-menu-box label{
+  color: white;
+  text-transform: capitalize;
+}
+
 .searchdb  .field-content {
     display: inline-block;
     width: 72%;
     padding : 5px 2%;
 }
-/*
 .searchdb .views-field:nth-child(even) .field-content{
-	background-color: #F3DBD7;
+	background-color: #f3f0cf;
 }
-*/
 .searchdb  .views-field:nth-child(odd) .field-content {
-	background-color: #CDCBCC;
+	background-color: #cdcbcc;
 	border-top : 1px solid #7B7B7B;
 	border-bottom : 1px solid #7B7B7B;
 	
@@ -74,10 +79,17 @@
 .view-header{
 	text-align : center;
 	margin-bottom : 20px;
+	position: relative;
+	left: -50px;
 }
-.view-header .query {
-    margin-right: 20px;
+.query {
+	position: absolute;
+	left: 99px;
 }
 .pager a{
 	color : #C53413;
+}
+.view-main .views-field {
+    display: flex;
+    align-items: center;
 }

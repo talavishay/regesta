@@ -31,13 +31,20 @@ border :unset;
 	background-color: #edefed;
 	position: relative;
 	z-index: 1;
-	font-family: 'CrusaderGothic';
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
+	letter-spacing: 1px;
+}
 	
 }
-
-
+#block-block-5 h2:first-letter {
+	font-family: 'CrusaderGothic';
+	font-size : 23px;
+}
+#block-block-5 h2::first-letter {
+	font-family: 'CrusaderGothic';
+	font-size : 23px;
+}
 .pinkBox{
 	background-color : #E4D4D4;
 	padding: .5em 1em;
@@ -77,10 +84,12 @@ border :unset;
 	position: relative;
 	left: 503px;
 }
+#block-block-8 p > span,
 #webform-component-facebook--email p > span{
     position: relative;
     left: 248px;
 }
+#block-block-8 a,
 .node-webform  a{
 	color : #AA1A02;
 }
@@ -89,7 +98,9 @@ border :unset;
 	min-height: 23px;
 	display: block;
 	padding-right: 30px;
+/*
 	margin: 0 auto;
+*/
 	color: #AA1A02;
 	margin-bottom: 20px;
 	width: 75px;
@@ -105,6 +116,9 @@ border :unset;
 	height: 1px;
 	margin-bottom: 1em ;
 }
+.redTilte + .dark {
+	margin-bottom: 0em ;
+}
 .hr{
 	margin: 1em 0px;
 }
@@ -112,8 +126,8 @@ border :unset;
 	padding-left: 40px;
 	background-repeat: no-repeat;
 	background-position: center left;
-	min-height: 35px;
-	line-height: 35px;
+	min-height: 31px;
+	line-height: 31px;
 	margin-top: 85px;
 }
 

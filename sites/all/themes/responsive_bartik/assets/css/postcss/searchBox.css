@@ -49,7 +49,10 @@
 }
 .views-exposed-widget:hover input{
   background-color: #AA1A02;
-	
+}
+.views-exposed-widget input[type=submit]{
+	width : 88px !important;
+	height: 35px;
 }
 #edit-field-year-wrapper,
 #edit-field-year-1-wrapper {
@@ -114,31 +117,23 @@ margin-bottom: 5px;
 */
 /*
  *  Placeholder
- *
+ */
  ::-webkit-input-placeholder {
-  color: #48484A;  
-  font-weight : bold;
-  margin-left : 28px;
+	color: #393535;  
 }
 
 :-moz-placeholder { 
-   color: #48484A;  
-  font-weight : bold;
-  margin-left : 28px;
+   color: #393535;  ;  
 }
 
 ::-moz-placeholder {  
-  color: #48484A;  
-  font-weight : bold;
-  margin-left : 28px;
+	color: #393535;  
 }
 
 :-ms-input-placeholder {  
-  color: #48484A;  
-  font-weight : bold;
-  margin-left : 28px;
+	color: #393535;  
 }
-*
+/*
 hover
 */
 
