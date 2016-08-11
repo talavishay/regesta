@@ -17,7 +17,9 @@
 @import "footerMenu.css"; 	
 @import "search.css";
 @import "dialog.css";
+/*
 @import "overlay.css";
+*/
 *{
 	font-family : arial, Arial;
 }
