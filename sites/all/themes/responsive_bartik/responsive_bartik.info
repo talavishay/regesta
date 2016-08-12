@@ -9,8 +9,8 @@ stylesheets[all][]  = assets/css/regstra_index.css
 
 
 ;scripts[] = assets/js/collapsible-menu.js
-;scripts[] = assets/js/overlay_site.js
-;scripts[] = assets/js/customFacet.js
+scripts[] = assets/js/overlay_site.js
+scripts[] = assets/js/customFacet.js
 
 regions[top_menu_box]     = top menu box
 regions[branding]         = Branding
