@@ -594,7 +594,7 @@ body:not(.front) .region-top-menu-box #block-block-1 {
 }
 .front #stamp{
 	position : absolute;
-	bottom: 11px;
+	bottom: 8px;
 	right: 40px;
 	transform: scale(1);
 }
@@ -904,6 +904,9 @@ a.active-trail {
 #page-wrapper{
   margin: 0 auto;
   width : 1000px;
+}
+#page {
+    position: relative;
 }
 input {
   line-height: 1.6em;

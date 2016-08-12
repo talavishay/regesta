@@ -25,6 +25,9 @@
   margin: 0 auto;
   width : 1000px;
 }
+#page {
+    position: relative;
+}
 input {
   line-height: 1.6em;
 }
