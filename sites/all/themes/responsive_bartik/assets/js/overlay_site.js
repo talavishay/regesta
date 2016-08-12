@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 
 
 
-jQuery('body:not(.ie) #page-wrapper').css('position','relative').append('<div id="overlay_site"></div><div id="overlay_controls_wrap"><div id="overlay_control" class="overlay_controls_box">*</div><div id="overlay_control_dark" class="overlay_controls_box">-</div><div id="overlay_control_light" class="overlay_controls_box">+</div><div id="overlay_control_opacity" class="overlay_controls_box"></div></div>');//+
+//~ jQuery('body:not(.ie) #page-wrapper').css('position','relative').append('<div id="overlay_site"></div><div id="overlay_controls_wrap"><div id="overlay_control" class="overlay_controls_box">*</div><div id="overlay_control_dark" class="overlay_controls_box">-</div><div id="overlay_control_light" class="overlay_controls_box">+</div><div id="overlay_control_opacity" class="overlay_controls_box"></div></div>');//+
 
 // '<div id="ruler" style="position:fixed;top:0px;left:20px;background:red;width:1px;height:100%"></div>');
  jQuery('#overlay_control').bind("click", function(e){
@@ -52,7 +52,7 @@ jQuery('body:not(.ie) #page-wrapper').css('position','relative').append('<div id
      return false;
 
  });
- jQuery('body.front #overlay_site').css("background","url(/sites/all/themes/responsive_bartik/screenshot.png)");
+ //~ jQuery('body.front #overlay_site').css("background","url(/sites/all/themes/responsive_bartik/screenshot.png)");
  //  jQuery('body.page-category #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_cat.png)");
  // jQuery('body.page-node-213 #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_halely.png)");
  // jQuery('body.page-node-188 #overlay_site').css("background","url(/sites/all/modules/overlay_site/ipad_studio.png)");
