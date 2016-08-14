@@ -863,6 +863,9 @@ a.active-trail {
 	background-color: unset;
 	background-image: unset;
 }
+.ui-dialog .views-label-nothing {
+    vertical-align: top !important;
+}
 #overlay_site{
       background: url("/sites/all/themes/responsive_bartik/screenshot.png") no-repeat scroll 0 0 / contain transparent;
     display: none;

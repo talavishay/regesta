@@ -21,3 +21,6 @@
 	background-color: unset;
 	background-image: unset;
 }
+.ui-dialog .views-label-nothing {
+    vertical-align: top !important;
+}
