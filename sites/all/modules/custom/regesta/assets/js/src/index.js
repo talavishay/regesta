@@ -95,7 +95,7 @@ function setFacets(parent, val, label){
 				facetBlock2 = jQuery('#block-views-ddeda97f67f133433b7ffff1d01e7c51');
 			parent.append( facetBlock1.length ? facetBlock1 : facetBlock2 );
 		break; 
-		case 'Recepient':
+		case 'Recipient':
 			var facetBlock1 = jQuery('#block-facetapi-0nkuqftrac7ixkaiaawciaoc1olu18cb'),
 				facetBlock2 = jQuery('#block-views-1fc7af91c1ec7d75ac090782522c4619');
 			parent.append( facetBlock1.length ? facetBlock1 : facetBlock2 );
