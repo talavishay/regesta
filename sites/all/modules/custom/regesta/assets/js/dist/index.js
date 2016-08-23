@@ -136,7 +136,7 @@
 		
 		
 		switch(label){
-			case 'initiator':
+			case 'Initiator':
 				var facetBlock1 = jQuery('#block-facetapi-o7wjesgfkysx6mdzp0tokh9iu2q0ttbr'),
 					facetBlock2 = jQuery('#block-views-ddeda97f67f133433b7ffff1d01e7c51');
 				parent.append( facetBlock1.length ? facetBlock1 : facetBlock2 );
